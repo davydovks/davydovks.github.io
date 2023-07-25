@@ -1,0 +1,295 @@
+/* Шрифты */
+@font-face {
+    font-family: 'Lato';
+    src: url(fonts/Lato-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Многие шрифты уменьшены, т.к. браузер отображает страницу как
+при ширине 1600, хотя реально экран 1920, как и макет.
+В стилях такие обозначены комментариями "уменьшен от" */
+
+/* === Общие блоки === */
+.btn{
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 17px; /* уменьшен от 20px */
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 17px 42px; /* 20px 50px */
+}
+.btn:hover{
+    background: #056b4e;
+}
+.center {
+    width: 71%; /* (1920 - 275 * 2) / 1920 */
+    margin: 0 auto;
+}
+.center-wide {
+    width: 80%; /* (1920 - 275 * 2) / 1920 */
+    margin: 0 auto;
+}
+.sect-subheader {
+    font-weight: 600;
+    font-size: 21px; /* уменьшен от 25px */
+    line-height: 157%; 
+    color: #424242;
+}
+.sect-header {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px; /* уменьшен от 50px */
+    line-height: 157%; 
+    color: #01996D;
+}
+.sect-text {
+    font-weight: 500;
+    font-size: 17px; /* уменьшен от 20px */
+    line-height: 150%; 
+    color: #424242;
+}
+/* === Шапка === */
+.header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D6D6D6;
+}
+.header-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;  /* уменьшен от 85px */
+}
+/* --- Меню навигации --- */
+.menu__list {
+    width: 29vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px; /* уменьшен от 20px */
+    line-height: 120%;
+    color: #292929;
+    transition: 0.3s;
+    font-family: 'Lato';
+}
+.menu__link:hover {
+    color: #01996D;
+}
+/* --- Ссылка в заголовке --- */
+.header__sign-in {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;  /* уменьшен от 20px */
+    line-height: 120%;
+    color: #000000;
+    transition: 0.3s;
+    margin-right: 30px;  /* уменьшен от 35px */
+}
+.header__sign-in:hover {
+    color: #01996D;
+}
+.header__start-trial{
+    padding: 11px 42px; /* 13px 50px */
+}
+/* === Секция 1. Be aware === */
+.frontpage {
+    background-image: url(img/BG.jpg);
+    background-size: 100%;
+    height: 46.2vw;
+    padding-top: 175px;
+}
+.frontpage__title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px; /* уменьшен от 65px */
+    line-height: 62px; /* уменьшен от 74px */
+    color: #01996D;
+}
+.frontpage__text {
+    /* наследует от sect-text, цвет переопределяем */
+    color: #484848;
+    width: 420px;
+    margin-top: 30px;
+}
+.frontpage__button {
+    margin-top: 53px;
+}
+/* === Секция 2. How it works === */
+.section2 {
+    padding-top: 169px;
+    padding-bottom: 51px;
+}
+/* --- Верхняя часть страницы --- */
+.section2__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section2__text {
+    width: 35vw;
+}
+/* --- Нижняя часть страницы --- */
+.section2__content {
+    display: flex;
+    justify-content: space-between;
+}
+.section2__columns {
+    width: 27.6%;
+}
+.section2__num1 {
+    margin-top: 52px;
+}
+.section2__num2 {
+    margin-top: 339px;
+}
+.section2__num3 {
+    margin-top: 106px;
+}
+.section2__num-header {
+    position: relative;
+}
+.section2__numbers {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 125px;  /* уменьшен от 150px */
+    line-height: 150%;
+    text-align: left;
+    color: rgba(1, 153, 109, 0.2);
+}
+.section2__num-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 150%;
+    text-align: left;
+    color: #000000;
+    position: absolute;
+    bottom: 1.5em;
+    left: 2.5em;
+}
+.section2__content div:last-child h3 {
+    /* сдвигаем "Alivio!" у третьего шага */
+    left: 4em;
+}
+.section2__img {
+    padding-top: 60px;
+    width: 100%;
+}
+/* === Секция 3. Kayla's story === */
+.section3 {
+    background-color: #245852;
+    padding: 222px 0 184px;
+}
+.section3__center-wide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section3__header {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px; /* уменьшен от 50px */
+    line-height: 157%;
+    color: #FFFFFF;
+    margin-bottom: 33px;    
+}
+.section3__text {
+    /* font-weight: 600; */
+    font-size: 21px; /* уменьшен от 25px */
+    line-height: 157%;
+    color: #FFFFFF;
+    margin-bottom: 48px; /* уменьшен от 57px */
+}
+.section3__right {
+    display: block;
+    margin: 0 auto;
+    width: 59%;
+    position: relative;
+}
+.section3__video-img {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16.3326px;
+    width: 100%;
+}
+.section3__video-play {
+    width: 9%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+/* === Секция 4. Our product === */
+.section4__center {
+    display: flex;
+    justify-content: space-between;
+    padding: 113px 0 168px;
+}
+/* --- Картинки --- */
+.section4__images {
+    width: 36.3vw; /* = 700px at 1920 */
+    height: 33.6vw; /* = 648px at 1920 */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.section4__photo {
+    width: 91.3%;
+    align-self: flex-end; /* сдвиагаем вправо вверх */
+}
+.section4__card {
+    width: 47.3%;
+    border-radius: 4px;
+    position: absolute; 
+    left: 0; /* сдвигаем влево вниз */
+    bottom: 0;
+    filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+}
+/* --- Текст --- */
+.section4__content {
+    width: 42.6%;
+}
+.section4__text {
+    margin: 20px 0 40px;
+}
+/* === Подвал === */
+.footer {
+    background-color: #245852;
+    padding-top: 105px;
+    padding-bottom: 144px;
+}
+.footer__logo {
+    margin-bottom: 75px;
+}
+.footer p + p {
+    margin-top: 60px;
+}
+.footer__link {
+    /* font-weight: 600; */
+    font-size: 21px; /* уменьшен от 25px */
+    line-height: 120%;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .3s;
+}
+.footer__link:hover {
+    color: #01996D;
+}

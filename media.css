@@ -1,0 +1,37 @@
+@media (max-width: 1400px) {
+    .center {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content__col1 img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 950px) {
+    .center {
+        width: 100%;
+    }
+    .content__col1 img {
+        width: 200px;
+    }
+    .content__col2 ul {
+        padding-inline-start: 20px;
+    }
+    .content__col3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .done::after {
+        width: 80px;
+        height: 71px;
+    }
+}
+
+@media (max-width: 660px) {
+    .content__col1 img {
+        width: 120px;
+    }
+}
